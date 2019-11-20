@@ -344,39 +344,6 @@ table {
 # Forms
 --------------------------------------------------------------*/
 /* Buttons */
-button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  border: 1px solid;
-  border-color: #ccc #ccc #bbb;
-  border-radius: 3px;
-  background: #e6e6e6;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.8);
-  font-size: .75rem;
-  line-height: 1;
-  padding: .6rem 1rem .4rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8); }
-  button:hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa;
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02);
-            box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8), inset 0 15px 17px rgba(255, 255, 255, 0.8), inset 0 -5px 12px rgba(0, 0, 0, 0.02); }
-  button:active, button:focus,
-  input[type="button"]:active,
-  input[type="button"]:focus,
-  input[type="reset"]:active,
-  input[type="reset"]:focus,
-  input[type="submit"]:active,
-  input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb;
-    -webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);
-            box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15); }
-
 /* Fields */
 input[type="text"],
 input[type="email"],
@@ -593,3 +560,72 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 /* Submit a Quote Page */
+* {
+  text-align: left;
+  text-decoration: none;
+  list-style-type: none;
+  color: #ffffff;
+  background-color: #222222;
+  line-height: 1.5rem;
+  font-family: 'Exo', sans-serif; }
+
+body {
+  background-color: #222222;
+  padding: 1rem;
+  padding-top: 3.5rem;
+  font-size: 16px; }
+  body a {
+    color: #00cc00; }
+    body a:visited {
+      color: #00cc00; }
+    body a:hover {
+      color: #090; }
+  body .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  body .entry-content {
+    font-size: 20px; }
+  body .entry-title {
+    font-size: 20px; }
+  body .btn-container {
+    padding-top: 30px; }
+  body footer ul {
+    padding-left: 0px;
+    margin: 0; }
+    body footer ul li {
+      padding: 10px;
+      border-right: 1px, solid, #ffffff; }
+  body footer .site-info {
+    margin-top: 72px;
+    margin-bottom: 48px;
+    font-size: 5px; }
+  body footer .menu-item-215 {
+    padding-left: 0; }
+  body footer .menu-item-217 {
+    border: none; }
+  body footer .menu-item-214 {
+    display: none; }
+
+.btn {
+  background-color: #222222;
+  color: #00cc00;
+  line-height: 1;
+  padding: .75rem 2.25rem;
+  border: 1px, solid, #00cc00;
+  border-radius: 4px; }
+  .btn:visited {
+    color: #00cc00; }
+  .btn:focus {
+    outline: 0;
+    outline-color: #090;
+    border: 1px, solid, #090; }
+  .btn:hover {
+    color: #090;
+    border: 1px, solid, #090; }

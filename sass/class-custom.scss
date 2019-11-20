@@ -1,0 +1,34 @@
+// colors:
+// $main-font-color: #ffffff;
+// $link-font-color: #00cc00;
+// $hover-color: #090;
+// $main-background-color: #222222;
+// main colors for website as refrence
+
+
+
+
+
+
+
+.btn {
+    background-color: $main-background-color;
+    color: $link-font-color;
+    line-height: 1;
+    padding: .75rem 2.25rem;
+    border: 1px, solid, $link-font-color;
+    border-radius: 4px;
+    &:visited {
+        color: $link-font-color;
+    }
+    &:focus {
+        outline: 0;
+        outline-color: $hover-color;
+        border: 1px, solid, $hover-color;
+    }
+    &:hover {
+        color: $hover-color;
+        border: 1px, solid, $hover-color;
+    }
+}
+

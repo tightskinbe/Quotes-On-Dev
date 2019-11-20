@@ -1,6 +1,7 @@
+
 (function ($) {
 
-    $('body').append('hello aosndoiasjdiaosdjasiodjosaidjaiosdjaoisdj')
+    $('body').append('')
     // code goes here
 
     //1. get request to grab random post and append to the dom
@@ -11,13 +12,13 @@
 
     $.ajax({
         method: "GET",
-        url: // qod_vars.rest_url + /wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1
+        // url: // qod_vars.rest_url + /wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1
     }).done(function (data) {
-            console.log(data);
+        console.log(data);
 
-        }).fail(function (error) {
-            console.log('fail does not work waaaaaaaaaaaaaaaaa', error);
-        })
+    }).fail(function (error) {
+        console.log('fail does not work waaaaaaaaaaaaaaaaa', error);
+    })
     //2. post a new quote using the post method
     // use a form to a submit a quite so a .submit quote
 
