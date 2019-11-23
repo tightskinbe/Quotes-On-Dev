@@ -1,15 +1,22 @@
 
 (function ($) {
 
+    let lastPage = '';
     $('body').append('')
     $('.btn').click(function () {
         console.log('you clicked the btn');
 
+        lastPage = document.URL;
 
         $.ajax({
             method: "GET",
             url: window.qod_vars.rest_url + '/wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1'
         }).done(function (data) {
+            history.pushState(null, null, qod_vars.home_url + '/' + data[0].slug);
+            // 1st value is an object which manages State
+            // 2nd value is the url title browser tab
+            // 3rd value is the url in the browser
+
             console.log(data);
 
 
@@ -41,7 +48,14 @@
         }).fail(function (error) {
             console.log('fail does not work waaaaaaaaaaaaaaaaa', error);
         })
-    })
+    }); // end of button
+
+    //update the page when we click foward and back buttons
+    $(window).on('popstate', function () {
+        // update url 
+        window.location.replace(lastPage);
+    });
+
 
 
     $('#quote-submission-form').submit(function (event) {
@@ -68,10 +82,9 @@
         }).done(function () {
             console.log('got the post from you');
 
-            $('#quote-submission-form').hide();
+            $('#quote-submission-form').slideUp();
             $('.entry-title').hide();
-            $('.entry-title').append("<h2>Thanks For Posting</h2>");
-            $('.entry-title').show();
+            $('.site-content').append('Thanks for subbing');
 
 
         }).fail(function (error) {

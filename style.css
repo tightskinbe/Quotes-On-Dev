@@ -689,13 +689,12 @@ textarea {
     width: 700px; }
   .entry-content:before {
     content: "\f10d";
-    left: 5%;
+    left: -150px;
     color: #0c0;
     font-family: FontAwesome;
     font-size: 125px;
     line-height: 125px;
-    position: absolute;
-    top: 30%; }
+    position: absolute; }
   .entry-content:after {
     content: "\f10e";
     color: #0c0;
@@ -703,38 +702,30 @@ textarea {
     font-size: 125px;
     line-height: 125px;
     position: absolute;
-    left: 85%;
-    top: 30%; }
+    right: -150px;
+    top: 0; }
   .entry-content {
-    padding-left: 30px;
-    width: 1000px; }
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative; }
     .entry-content p {
-      width: 1000px;
-      padding-left: 200px;
       text-align: left;
       font-size: 40px;
       padding-top: 0;
-      margin: 0;
-      line-height: 65px; }
+      line-height: 65px;
+      margin: 0; }
   .entry-meta {
-    padding-right: 430px;
     padding-top: 20px;
+    margin: 0 auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    padding-left: 200px;
-    width: 1000px; }
-    .entry-meta h2 {
-      margin: 0;
-      width: 1000px; }
-    .entry-meta span {
-      width: 1000px;
-      text-align: left; }
-    .entry-meta .source {
-      width: 1000px; }
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-width: 800px; }
+    .entry-meta span a {
+      padding: 20px; }
   .flex-icons {
     display: -webkit-box;
     display: -ms-flexbox;
