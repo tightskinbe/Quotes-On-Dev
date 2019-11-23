@@ -596,7 +596,6 @@ body {
   body .btn-container {
     padding-top: 30px; }
   body footer ul {
-    padding-left: 0px;
     margin: 0; }
     body footer ul li {
       padding: 10px;
@@ -678,13 +677,17 @@ textarea {
             justify-content: flex-start; }
     .flex-footer p {
       margin: 0;
-      width: 300px;
       border-left: 1px, solid, #ffffff;
       padding-left: 10px; } }
 
 @media (min-width: 1080px) {
   * {
     text-align: center; }
+  .flex-footer {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 0 auto; }
   .logo-img {
     width: 700px; }
   .entry-content:before {
