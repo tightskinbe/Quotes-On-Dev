@@ -36,3 +36,8 @@ Quotes on Dev Theme includes support for Infinite Scroll in Jetpack.
 
 * Based on Underscores http://underscores.me/, (C) 2012-2015 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css http://necolas.github.io/normalize.css/, (C) 2012-2015 Nicolas Gallagher and Jonathan Neal, [MIT](http://opensource.org/licenses/MIT)
+
+
+this webite was made using HTML SCSS Javascript php and WordPress. to install wordpress go onto the wordpress website and download the template.
+you then need to make a database and install wordpress but running mamp. in mamp go into my website and select the folder where you downloaded the wordpress
+get your shoes shined up and grab a piece of juicy fruit and start working.
