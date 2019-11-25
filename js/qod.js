@@ -78,7 +78,7 @@
 
             $('#quote-submission-form').slideUp();
             $('.entry-title').hide();
-            $('.site-content').append('Thanks for subbing');
+            $('.site-content').append('Thanks for the quote!');
 
 
         }).fail(function (error) {
