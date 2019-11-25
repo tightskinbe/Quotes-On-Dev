@@ -196,9 +196,9 @@ input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none; }
 
 fieldset {
-  border: 1px solid #c0c0c0;
+  border: none;
   margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
+  padding: 0; }
 
 legend {
   border: 0;
@@ -661,7 +661,7 @@ body {
     body .author-of-quote label {
       padding-bottom: 10px; }
     body .author-of-quote input {
-      max-width: 50%;
+      width: 50%;
       color: #ffffff; }
   body .quote {
     padding-top: 20px; }
@@ -682,7 +682,7 @@ body {
             flex-direction: column; }
     body .quote-source input {
       margin-top: 10px;
-      max-width: 50%;
+      width: 50%;
       color: #ffffff; }
   body .quote-source-url {
     padding-top: 10px;
@@ -698,7 +698,7 @@ body {
             flex-direction: column; }
     body .quote-source-url input {
       margin-top: 10px;
-      max-width: 50%;
+      width: 50%;
       color: #ffffff; }
   body .submit-quote {
     margin-top: 10px;
@@ -708,6 +708,16 @@ body {
     text-align: center;
     height: 40px;
     font-family: 'Exo', sans-serif; }
+  body .submit-quote-div {
+    margin: 0 auto;
+    max-width: 750px;
+    text-align: left; }
+  body .error-content {
+    font-size: 18px; }
+  body .search-submit {
+    border: none; }
+  body .fa-search:before {
+    content: "\f002"; }
 
 .btn {
   background-color: #222222;
@@ -913,6 +923,19 @@ textarea {
     .about-content p {
       font-size: 16px;
       line-height: 2; }
+  body .quote {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    max-width: 750px; }
   body .submit-a-quote-title {
     font-size: 32px;
     padding-top: 20px; }
@@ -927,7 +950,8 @@ textarea {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 0 auto; }
+    margin: 0 auto;
+    max-width: 750px; }
     body .author-of-quote label {
       padding-bottom: 10px; }
     body .author-of-quote input {
@@ -938,13 +962,15 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    margin: 0 auto;
+    max-width: 750px; }
     body .quote-source input {
       margin-top: 10px;
       max-width: 70%;
@@ -954,13 +980,15 @@ textarea {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; }
+            flex-direction: column;
+    margin: 0 auto;
+    max-width: 750px; }
     body .quote-source-url input {
       margin-top: 10px;
       max-width: 70%;
@@ -972,4 +1000,26 @@ textarea {
     width: 30%;
     text-align: center;
     height: 40px;
-    font-family: 'Exo', sans-serif; } }
+    font-family: 'Exo', sans-serif; }
+  .quote-submission-wrapper {
+    margin: 0 auto; }
+  .submit-a-quote-title {
+    position: relative; }
+  .submit-a-quote-title:before {
+    color: #0c0;
+    font-family: FontAwesome;
+    font-size: 125px;
+    line-height: 125px;
+    position: absolute;
+    content: "\f10d";
+    left: -150px; }
+  .submit-a-quote-title:after {
+    color: #0c0;
+    font-family: FontAwesome;
+    font-size: 125px;
+    line-height: 125px;
+    position: absolute;
+    content: "\f10e";
+    right: -150px; }
+  .error-content {
+    position: relative; } }

@@ -262,7 +262,13 @@
 
      body {
 
-
+        .quote {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            margin: 0 auto;
+            max-width: 750px;
+        }
 
         .submit-a-quote-title {
             font-size: 32px;
@@ -276,6 +282,7 @@
             align-items: flex-start;
             flex-direction: column;
             margin: 0 auto; 
+            max-width: 750px;
             label {
                 padding-bottom: 10px
             }
@@ -290,8 +297,10 @@
         .quote-source {
             padding-top: 10px;
             display: flex;
-            justify-content: flex-start;
+            align-items: flex-start;
             flex-direction: column;
+            margin: 0 auto;
+            max-width: 750px;
             input{
                 margin-top: 10px;
                 max-width: 70%;
@@ -303,8 +312,10 @@
         .quote-source-url {
             padding-top: 10px;
             display: flex;
-            justify-content: flex-start;
+            align-items: flex-start;
             flex-direction: column;
+            margin: 0 auto;
+            max-width: 750px;
             input {
                 margin-top: 10px;
                 max-width: 70%;
@@ -331,5 +342,42 @@
     
 
 
+        .quote-submission-wrapper {
+            margin: 0 auto;
+        }
 
+        .submit-a-quote-title{
+            position: relative;
+        }
+        
+        .submit-a-quote-title:before {
+        color: #0c0;
+        font-family: FontAwesome;
+        font-size: 125px;
+        line-height: 125px;
+        position: absolute;
+        content: "\f10d";
+        left: -150px;
+        }
+
+        .submit-a-quote-title:after {
+            color: #0c0;
+            font-family: FontAwesome;
+            font-size: 125px;
+            line-height: 125px;
+            position: absolute;
+            content: "\f10e";
+            right: -150px;
+            }
+
+
+
+
+            .error-content {
+                position: relative;
+            }
+
+
+
+            
 } // end of 1080 min media 

@@ -4,7 +4,6 @@
     let lastPage = '';
     $('body').append('')
     $('.btn').click(function () {
-        console.log('you clicked the btn');
 
         lastPage = document.URL;
 
@@ -17,7 +16,6 @@
             // 2nd value is the url title browser tab
             // 3rd value is the url in the browser
 
-            console.log(data);
 
 
             //clear html before appending
@@ -46,7 +44,7 @@
 
 
         }).fail(function (error) {
-            console.log('fail does not work waaaaaaaaaaaaaaaaa', error);
+            console.log(error);
         })
     }); // end of button
 
@@ -60,15 +58,12 @@
 
     $('#quote-submission-form').submit(function (event) {
         event.preventDefault();
-        console.log('ajsndaosjkdn');
 
 
-        // console.log(window.qod_vars.rest_url);
         const authorOfQuote = document.getElementById('quote-author');
         const quoteContent = document.getElementById('quote-content');
         const quoteSource = document.getElementById('quote-source');
         const quoteSourceUrl = document.getElementById('quote-source-url');
-        // const fullForm = document.getElementById('quote-submission-form');
 
         $.ajax({
             method: "POST",
@@ -80,7 +75,6 @@
             }
 
         }).done(function () {
-            console.log('got the post from you');
 
             $('#quote-submission-form').slideUp();
             $('.entry-title').hide();
@@ -101,15 +95,9 @@
 
 
 
-    // code goes here
-
-    //1. get request to grab random post and append to the dom
 
 
-    // add a click event for postanouther and then run the ajax code
 
-    //2. post a new quote using the post method
-    // use a form to a submit a quite so a .submit quote
 
 
 })(jQuery);
