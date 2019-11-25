@@ -230,7 +230,7 @@ input,
 select,
 textarea {
   color: #404040;
-  font-family: sans-serif;
+  font-family: 'Exo', sans-serif;
   font-size: 1rem;
   line-height: 1.5; }
 
@@ -351,15 +351,7 @@ input[type="url"],
 input[type="password"],
 input[type="search"],
 textarea {
-  color: #666;
   border-radius: 3px; }
-  input[type="text"]:focus,
-  input[type="email"]:focus,
-  input[type="url"]:focus,
-  input[type="password"]:focus,
-  input[type="search"]:focus,
-  textarea:focus {
-    color: #111; }
 
 input[type="text"],
 input[type="email"],
@@ -647,6 +639,75 @@ body {
     border: none; }
   body footer .menu-item-214 {
     display: none; }
+  body .about {
+    font-size: 32px;
+    padding-top: 20px; }
+  body .about-content {
+    font-size: 16px; }
+  body .submit-a-quote-title {
+    font-size: 32px;
+    padding-top: 20px; }
+  body .author-of-quote {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    body .author-of-quote label {
+      padding-bottom: 10px; }
+    body .author-of-quote input {
+      max-width: 50%;
+      color: #ffffff; }
+  body .quote {
+    padding-top: 20px; }
+    body .quote textarea {
+      margin-top: 10px;
+      color: #ffffff; }
+  body .quote-source {
+    padding-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    body .quote-source input {
+      margin-top: 10px;
+      max-width: 50%;
+      color: #ffffff; }
+  body .quote-source-url {
+    padding-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    body .quote-source-url input {
+      margin-top: 10px;
+      max-width: 50%;
+      color: #ffffff; }
+  body .submit-quote {
+    margin-top: 10px;
+    color: #00cc00;
+    border-radius: 3px;
+    width: 40%;
+    text-align: center;
+    height: 40px;
+    font-family: 'Exo', sans-serif; }
 
 .btn {
   background-color: #222222;
@@ -672,6 +733,8 @@ textarea {
   border: 1px, solid, #00cc00; }
 
 @media (min-width: 620px) {
+  .about-content p {
+    font-size: 16px; }
   .logo-img {
     width: 500px; }
   article {
@@ -679,6 +742,8 @@ textarea {
     article p {
       font-size: 30px;
       line-height: 2.5rem; }
+  footer {
+    padding-bottom: 50px; }
   .btn {
     padding-top: 15px;
     padding-bottom: 12px;
@@ -715,7 +780,71 @@ textarea {
     .flex-footer p {
       margin: 0;
       border-left: 1px, solid, #ffffff;
-      padding-left: 10px; } }
+      padding-left: 10px; }
+  .submit-a-quote-title {
+    font-size: 32px;
+    padding-top: 20px; }
+  .author-of-quote {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .author-of-quote label {
+      padding-bottom: 10px; }
+    .author-of-quote input {
+      max-width: 50%;
+      color: #ffffff; }
+  .quote {
+    padding-top: 20px; }
+    .quote textarea {
+      margin-top: 10px;
+      color: #ffffff; }
+  body .quote-source {
+    padding-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    body .quote-source input {
+      margin-top: 10px;
+      max-width: 70%;
+      color: #ffffff; }
+  body .quote-source-url {
+    padding-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    body .quote-source-url input {
+      margin-top: 10px;
+      max-width: 70%;
+      color: #ffffff; }
+  body .submit-quote {
+    margin-top: 10px;
+    color: #00cc00;
+    border-radius: 3px;
+    width: 30%;
+    text-align: center;
+    height: 40px;
+    font-family: 'Exo', sans-serif; } }
 
 @media (min-width: 1080px) {
   * {
@@ -724,7 +853,8 @@ textarea {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    margin: 0 auto; }
+    margin: 0 auto;
+    padding-right: 40px; }
   .logo-img {
     width: 700px; }
   .entry-content:before {
@@ -745,7 +875,7 @@ textarea {
     right: -150px;
     top: 0; }
   .entry-content {
-    max-width: 800px;
+    max-width: 750px;
     margin: 0 auto;
     position: relative; }
     .entry-content p {
@@ -763,11 +893,83 @@ textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    max-width: 800px; }
+    max-width: 750px; }
     .entry-meta span a {
       padding: 20px; }
   .flex-icons {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    font-size: 130px; } }
+    font-size: 130px; }
+  .entry-header {
+    margin: 0 auto;
+    text-align: left;
+    max-width: 750px;
+    padding-bottom: 20px; }
+    .entry-header h1 {
+      text-align: left; }
+  .about-content {
+    max-width: 750px; }
+    .about-content p {
+      font-size: 16px;
+      line-height: 2; }
+  body .submit-a-quote-title {
+    font-size: 32px;
+    padding-top: 20px; }
+  body .author-of-quote {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto; }
+    body .author-of-quote label {
+      padding-bottom: 10px; }
+    body .author-of-quote input {
+      max-width: 50%;
+      color: #ffffff; }
+  body .quote-source {
+    padding-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    body .quote-source input {
+      margin-top: 10px;
+      max-width: 70%;
+      color: #ffffff; }
+  body .quote-source-url {
+    padding-top: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    body .quote-source-url input {
+      margin-top: 10px;
+      max-width: 70%;
+      color: #ffffff; }
+  body .submit-quote {
+    margin-top: 10px;
+    color: #00cc00;
+    border-radius: 3px;
+    width: 30%;
+    text-align: center;
+    height: 40px;
+    font-family: 'Exo', sans-serif; } }

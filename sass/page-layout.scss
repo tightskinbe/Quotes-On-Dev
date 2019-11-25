@@ -69,6 +69,8 @@
 
 
 
+
+
 body {
     background-color: $main-background-color;
     padding: 1rem;
@@ -146,6 +148,86 @@ body {
 
     } // end of footer
 
+
+
+
+    .about {
+        font-size: 32px;
+        padding-top: 20px;
+    }
+
+
+    .about-content {
+        font-size: 16px;
+    }
+
+
+    .submit-a-quote-title {
+        font-size: 32px;
+        padding-top: 20px;
+    }
+
+
+    .author-of-quote {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column; 
+        label {
+            padding-bottom: 10px
+        }
+        input {
+            max-width: 50%;
+            color: $main-font-color;
+        }
+
+    }
+
+    .quote {
+        padding-top: 20px;
+        textarea  {
+            margin-top: 10px;
+            color: $main-font-color;
+        }
+    }
+
+
+    .quote-source {
+        padding-top: 10px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        input{
+            margin-top: 10px;
+            max-width: 50%;
+            color: $main-font-color;
+        }
+    }
+
+
+    .quote-source-url {
+        padding-top: 10px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        input {
+            margin-top: 10px;
+            max-width: 50%;
+            color: $main-font-color;
+        }
+
+    }
+
+
+
+    .submit-quote {
+        margin-top: 10px;
+        color: $link-font-color;
+        border-radius: 3px;
+        width: 40%;
+        text-align: center;
+        height: 40px;
+        font-family: 'Exo', sans-serif;        
+    }
 
 
 } // end of body

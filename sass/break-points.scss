@@ -1,4 +1,13 @@
 @media (min-width: 620px) {
+    
+
+    .about-content {
+       p{ 
+           font-size: 16px;
+       }
+    }
+    
+    
     .logo-img {
         width: 500px;
         
@@ -12,6 +21,10 @@
         }
     }
 
+
+    footer {
+        padding-bottom: 50px;
+    }
 
     .btn {
         padding-top: 15px;
@@ -67,6 +80,83 @@
         }
     }
 
+
+    .submit-a-quote-title {
+        font-size: 32px;
+        padding-top: 20px;
+    }
+
+
+    .author-of-quote {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column; 
+        label {
+            padding-bottom: 10px
+        }
+        input {
+            max-width: 50%;
+            color: $main-font-color;
+        }
+
+    }
+
+    .quote {
+        padding-top: 20px;
+        textarea  {
+            margin-top: 10px;
+            color: $main-font-color;
+        }
+    }
+
+    body {
+    .quote-source {
+        padding-top: 10px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        input{
+            margin-top: 10px;
+            max-width: 70%;
+            color: $main-font-color;
+        }
+    }
+
+
+    .quote-source-url {
+        padding-top: 10px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        input {
+            margin-top: 10px;
+            max-width: 70%;
+            color: $main-font-color;
+        }
+
+    }
+    
+
+
+    .submit-quote {
+        margin-top: 10px;
+        color: $link-font-color;
+        border-radius: 3px;
+        width: 30%;
+        text-align: center;
+        height: 40px;
+        font-family: 'Exo', sans-serif;        
+    }
+
+
+    }
+
+
+
+
+
+
+
 } // end of min-width 620 px
 
 
@@ -77,9 +167,13 @@
         text-align: center;
     }
 
+   
+   
+   
     .flex-footer {
         justify-content: flex-end;
         margin: 0 auto;
+        padding-right: 40px;
     }
     .logo-img {
         width: 700px;
@@ -111,7 +205,7 @@
 
 
     .entry-content {
-            max-width: 800px;
+            max-width: 750px;
             margin: 0 auto;
             position: relative;
 
@@ -130,7 +224,7 @@
         margin: 0 auto;
         display: flex;
         align-items: center;
-        max-width: 800px;
+        max-width: 750px;
         span {
             a {
                 padding: 20px;
@@ -143,6 +237,99 @@
         display: flex;
         font-size: 130px;
     }
+
+
+    .entry-header {
+        margin: 0 auto;
+        text-align: left;
+        max-width: 750px;
+        padding-bottom: 20px;
+        h1 {
+            text-align: left;
+        }
+
+    }
+
+    .about-content {
+        max-width: 750px;
+        p{ 
+            font-size: 16px;
+            line-height: 2;
+        }
+     }
+
+
+
+     body {
+
+
+
+        .submit-a-quote-title {
+            font-size: 32px;
+            padding-top: 20px;
+        }
+    
+    
+        .author-of-quote {
+            display: flex;
+            // justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            margin: 0 auto; 
+            label {
+                padding-bottom: 10px
+            }
+            input {
+                max-width: 50%;
+                color: $main-font-color;
+            }
+    
+        }
+    
+
+        .quote-source {
+            padding-top: 10px;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            input{
+                margin-top: 10px;
+                max-width: 70%;
+                color: $main-font-color;
+            }
+        }
+    
+    
+        .quote-source-url {
+            padding-top: 10px;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            input {
+                margin-top: 10px;
+                max-width: 70%;
+                color: $main-font-color;
+            }
+    
+        }
+        
+    
+    
+        .submit-quote {
+            margin-top: 10px;
+            color: $link-font-color;
+            border-radius: 3px;
+            width: 30%;
+            text-align: center;
+            height: 40px;
+            font-family: 'Exo', sans-serif;        
+        }
+    
+    
+        }
+    
+    
+
 
 
 } // end of 1080 min media 
