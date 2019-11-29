@@ -1,12 +1,45 @@
 @media (min-width: 620px) {
     
 
+    .post-archives {
+        ul {
+            li {
+
+                padding: 8px;
+                font-size: 20px;
+            }
+        }
+    } 
+
+
+    .category-archives {
+        ul {
+            li {
+                font-size: 20px;
+
+            }
+        }
+    }
+
+
+    .wp-tag-cloud {
+        li {
+            font-size: 30px;
+        }
+    }
+
+
+
     .about-content {
        p{ 
            font-size: 16px;
        }
     }
     
+
+    .menu {
+        width: 102%;
+    }
     
     .logo-img {
         width: 500px;
@@ -36,7 +69,7 @@
     }
 
     ul {
-        width: 300px;
+        width: 100%;
         margin: 0;
         padding-left: 5px;
         li {
@@ -379,5 +412,48 @@
 
 
 
+            .browse-archives {
+                margin: 0 auto;
+                max-width: 700px;
+                position: relative;
+            }
             
+            .post-archives {
+                h2 {
+                    text-align: left;
+                }
+            }
+
+
+            .browse-archives:before {
+                color: #0c0;
+                font-family: FontAwesome;
+                font-size: 125px;
+                line-height: 125px;
+                position: absolute;
+                content: "\f10d";
+                left: -150px;
+                }
+        
+                .browse-archives:after {
+                    color: #0c0;
+                    font-family: FontAwesome;
+                    font-size: 125px;
+                    line-height: 125px;
+                    position: absolute;
+                    content: "\f10e";
+                    right: -150px;
+                    top: 0;
+                    }
+
+                    .entry-title {
+                        font-size: 32px;
+                    }
+
+                    .archives-title {
+                        h1 {
+                            font-size: 32px;
+                        }
+                    }
+
 } // end of 1080 min media 

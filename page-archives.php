@@ -11,7 +11,7 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
          <section class="browse-archives">
-            <header class="entry-header">
+            <header class="entry-header archives-title">
          		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
          	</header><!-- .entry-header -->
 
