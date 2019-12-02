@@ -196,9 +196,7 @@
 
 
 @media (min-width: 1080px) {
-    * {
-        text-align: center;
-    }
+
 
    
    
@@ -206,40 +204,22 @@
     .flex-footer {
         justify-content: flex-end;
         margin: 0 auto;
-        padding-right: 40px;
+        max-width: 1000px;
+        position: relative;
     }
     .logo-img {
         width: 700px;
+        
+    }
+    .site-branding {
+     
+            text-align: center;
+    
     }
 
-    .entry-content:before {
-        content: "\f10d";
-        left: -150px;
-        color: #0c0;
-        font-family: FontAwesome;
-        font-size: 125px;
-        line-height: 125px;
-        position: absolute;
-      
-    }
-        
-    .entry-content:after {
-        content: "\f10e";
-        color: #0c0;
-        font-family: FontAwesome;
-        font-size: 125px;
-        line-height: 125px;
-        position: absolute;
-        right: -150px;
-        top: 0;
-        
-
-    }
 
 
     .entry-content {
-            max-width: 750px;
-            margin: 0 auto;
             position: relative;
 
         p {
@@ -311,7 +291,6 @@
     
         .author-of-quote {
             display: flex;
-            // justify-content: center;
             align-items: flex-start;
             flex-direction: column;
             margin: 0 auto; 
@@ -383,25 +362,6 @@
             position: relative;
         }
         
-        .submit-a-quote-title:before {
-        color: #0c0;
-        font-family: FontAwesome;
-        font-size: 125px;
-        line-height: 125px;
-        position: absolute;
-        content: "\f10d";
-        left: -150px;
-        }
-
-        .submit-a-quote-title:after {
-            color: #0c0;
-            font-family: FontAwesome;
-            font-size: 125px;
-            line-height: 125px;
-            position: absolute;
-            content: "\f10e";
-            right: -150px;
-            }
 
 
 
@@ -425,26 +385,6 @@
             }
 
 
-            .browse-archives:before {
-                color: #0c0;
-                font-family: FontAwesome;
-                font-size: 125px;
-                line-height: 125px;
-                position: absolute;
-                content: "\f10d";
-                left: -150px;
-                }
-        
-                .browse-archives:after {
-                    color: #0c0;
-                    font-family: FontAwesome;
-                    font-size: 125px;
-                    line-height: 125px;
-                    position: absolute;
-                    content: "\f10e";
-                    right: -150px;
-                    top: 0;
-                    }
 
                     .entry-title {
                         font-size: 32px;
@@ -456,4 +396,40 @@
                         }
                     }
 
+
+                    .site-content {
+                        max-width: 750px;
+                        margin: 0 auto;
+                        position: relative;
+                    }
+
+                    .site-content:before {
+                        color: #0c0;
+                        font-family: FontAwesome;
+                        font-size: 125px;
+                        line-height: 125px;
+                        position: absolute;
+                        content: "\f10d";
+                        left: -150px;
+                        }
+
+
+
+
+                        .site-content:after {
+                            color: #0c0;
+                            font-family: FontAwesome;
+                            font-size: 125px;
+                            line-height: 125px;
+                            position: absolute;
+                            content: "\f10e";
+                            right: -150px;
+                            top: 0;
+                            }
+
+
+                            .archive-title {
+                                border-bottom: 1px dotted #fff;
+                                padding-bottom: 20px;
+                            }
 } // end of 1080 min media 

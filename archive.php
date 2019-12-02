@@ -14,15 +14,18 @@ get_header(); ?>
 
 			<header class="page-header">
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					the_archive_title( '<h1 class="page-title archive-title">', '</h1>' );
 				?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php
-					get_template_part( 'template-parts/content' );
+				<?php if (is_archive()){
+					get_template_part( 'template-parts/content', 'archives' );
+				} else {
+					get_template_part( 'template-parts/content');
+				}
 				?>
 
 			<?php endwhile; ?>

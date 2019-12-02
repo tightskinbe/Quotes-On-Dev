@@ -596,6 +596,9 @@ object {
   .tag-archives ul li {
     padding: 5px; }
 
+.archives-article {
+  border-bottom: 1px dotted #fff; }
+
 body {
   background-color: #222222;
   padding: 1rem;
@@ -866,36 +869,18 @@ textarea {
     font-family: 'Exo', sans-serif; } }
 
 @media (min-width: 1080px) {
-  * {
-    text-align: center; }
   .flex-footer {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
     margin: 0 auto;
-    padding-right: 40px; }
+    max-width: 1000px;
+    position: relative; }
   .logo-img {
     width: 700px; }
-  .entry-content:before {
-    content: "\f10d";
-    left: -150px;
-    color: #0c0;
-    font-family: FontAwesome;
-    font-size: 125px;
-    line-height: 125px;
-    position: absolute; }
-  .entry-content:after {
-    content: "\f10e";
-    color: #0c0;
-    font-family: FontAwesome;
-    font-size: 125px;
-    line-height: 125px;
-    position: absolute;
-    right: -150px;
-    top: 0; }
+  .site-branding {
+    text-align: center; }
   .entry-content {
-    max-width: 750px;
-    margin: 0 auto;
     position: relative; }
     .entry-content p {
       text-align: left;
@@ -1014,22 +999,6 @@ textarea {
     margin: 0 auto; }
   .submit-a-quote-title {
     position: relative; }
-  .submit-a-quote-title:before {
-    color: #0c0;
-    font-family: FontAwesome;
-    font-size: 125px;
-    line-height: 125px;
-    position: absolute;
-    content: "\f10d";
-    left: -150px; }
-  .submit-a-quote-title:after {
-    color: #0c0;
-    font-family: FontAwesome;
-    font-size: 125px;
-    line-height: 125px;
-    position: absolute;
-    content: "\f10e";
-    right: -150px; }
   .error-content {
     position: relative; }
   .browse-archives {
@@ -1038,7 +1007,15 @@ textarea {
     position: relative; }
   .post-archives h2 {
     text-align: left; }
-  .browse-archives:before {
+  .entry-title {
+    font-size: 32px; }
+  .archives-title h1 {
+    font-size: 32px; }
+  .site-content {
+    max-width: 750px;
+    margin: 0 auto;
+    position: relative; }
+  .site-content:before {
     color: #0c0;
     font-family: FontAwesome;
     font-size: 125px;
@@ -1046,7 +1023,7 @@ textarea {
     position: absolute;
     content: "\f10d";
     left: -150px; }
-  .browse-archives:after {
+  .site-content:after {
     color: #0c0;
     font-family: FontAwesome;
     font-size: 125px;
@@ -1055,7 +1032,6 @@ textarea {
     content: "\f10e";
     right: -150px;
     top: 0; }
-  .entry-title {
-    font-size: 32px; }
-  .archives-title h1 {
-    font-size: 32px; } }
+  .archive-title {
+    border-bottom: 1px dotted #fff;
+    padding-bottom: 20px; } }
